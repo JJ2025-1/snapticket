@@ -1,5 +1,7 @@
 # 🎟️ SnapTicket
 
+https://snapticket.vercel.app/
+
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase)](https://supabase.com/)
 [![TMDB API](https://img.shields.io/badge/TMDB-API-01B4E4?style=for-the-badge&logo=the-movie-database)](https://www.themoviedb.org/)

@@ -1,0 +1,7 @@
+# GitHub Language Detection
+*.js linguist-language=JavaScript
+*.css linguist-language=CSS
+*.c linguist-language=C
+*.json linguist-language=JSON
+*.bin linguist-vendored
+*.exe linguist-vendored

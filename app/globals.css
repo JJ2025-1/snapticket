@@ -1,0 +1,79 @@
+:root {
+  --snaptickets-gold: #ffc400;
+  --snaptickets-gold-hover: #e6b000;
+  --snaptickets-dark: #0a0a0a;
+  --snaptickets-bg: #0f0f0f;
+  --text-main: #ffffff;
+  --text-muted: #9ca3af;
+  --white: #ffffff;
+  --border-color: #262626;
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.7);
+  --max-width: 1200px;
+  
+  /* NEW CINEMATIC FONTS */
+  --font-cinematic: var(--font-bebas-neue), 'Impact', sans-serif;
+  --font-primary: var(--font-montserrat), 'Inter', -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--snaptickets-bg);
+  color: var(--text-main);
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cinematic);
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn-snaptickets {
+  background-color: var(--snaptickets-gold);
+  color: #000;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-snaptickets:hover {
+  background-color: var(--snaptickets-gold-hover);
+  transform: translateY(-1px);
+}
+
+.btn-snaptickets:active {
+  transform: translateY(0);
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

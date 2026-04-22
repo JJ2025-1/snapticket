@@ -559,7 +559,7 @@ export default function Page() {
               <div className={styles.tabs}>
                 <div className={`${styles.tab} ${activeTab === 'Showtimes' ? styles.tabActive : ''}`} onClick={() => setActiveTab('Showtimes')}>Showtimes</div>
                 <div className={`${styles.tab} ${activeTab === 'Movies' ? styles.tabActive : ''}`} onClick={() => setActiveTab('Movies')}>Movies</div>
-                <div className={styles.tab}>Coming Soon</div>
+                <div className={`${styles.tab} ${activeTab === 'Coming Soon' ? styles.tabActive : ''}`} onClick={() => setActiveTab('Coming Soon')}>Coming Soon</div>
               </div>
 
               <div className={styles.tabFilters}>
@@ -583,7 +583,7 @@ export default function Page() {
                 </div>
 
                 <div className={styles.scheduleList}>
-                  {movies.map(movie => (
+                  {movies.filter(m => m.status !== 'Coming Soon').map(movie => (
                     <div key={movie.id} className={styles.scheduleItem}>
                       <div className={styles.scheduleMovieInfo}>
                         <h3 className={styles.scheduleMovieTitle}>{movie.title}</h3>
@@ -604,9 +604,26 @@ export default function Page() {
                   ))}
                 </div>
               </div>
+            ) : activeTab === 'Coming Soon' ? (
+              <div className={styles.grid}>
+                {movies.filter(m => m.status === 'Coming Soon').map(movie => (
+                  <div key={movie.id} className={styles.card} style={{cursor: 'default'}}>
+                    <div className={styles.posterWrapper}>
+                      <img src={movie.poster_url} alt={movie.title} className={styles.posterImg} />
+                      <div className={styles.posterOverlay} style={{opacity: 1, background: 'rgba(0,0,0,0.4)'}}>
+                        <span className={styles.metaBadge} style={{background: 'var(--snaptickets-gold)', color: '#000'}}>SOON</span>
+                      </div>
+                    </div>
+                    <div className={styles.cardTitle}>{movie.title}</div>
+                    <div className={styles.cardMeta}>
+                      <span>Expected Release: 2026</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             ) : (
               <div className={styles.grid}>
-                {movies.map(movie => (
+                {movies.filter(m => m.status !== 'Coming Soon').map(movie => (
                   <div key={movie.id} className={styles.card} onClick={() => setSelectedMovie(movie)}>
                     <div className={styles.posterWrapper}>
                       <img src={movie.poster_url} alt={movie.title} className={styles.posterImg} />

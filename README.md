@@ -26,15 +26,15 @@
 
 ## <font color="#ffc400">✨ Core Features</font>
 
-### 🎬 Real-time Movie Discovery
+### <font color="#ffc400">🎬 Real-time Movie Discovery</font>
 *   **Live Sync:** Movie data fetched directly from Supabase.
 *   **Dynamic Posters:** High-resolution assets pulled via TMDB API.
 
-### 💺 Advanced Seat Engine
+### <font color="#ffc400">💺 Advanced Seat Engine</font>
 *   **Interactive Mapping:** Visual grid with multi-tier pricing (**Prime** & **Classic**).
 *   **Occupancy Control:** Real-time seat status updates and double-booking prevention.
 
-### 👤 Frictionless UX
+### <font color="#ffc400">👤 Frictionless UX</font>
 *   **Rapid Checkout:** Persistent user profiles stored in `localStorage`.
 *   **Instant Receipts:** Automatic booking ID generation and digital receipt views.
 *   **Mobile-First:** Fully responsive design for all devices.

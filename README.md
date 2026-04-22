@@ -77,6 +77,11 @@
 ---
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Designed_with-Passion-ffc400?style=for-the-badge" alt="Passion">
+  <img src="https://img.shields.io/badge/Maintained_by-JJ2025--1-3ECF8E?style=for-the-badge" alt="Maintainer">
+</p>
+
+<p align="center">
   <b>Built with ❤️ for the Global Cinema Community.</b><br>
   <i>Empowering movie buffs with a "snap" booking experience.</i>
 </p>

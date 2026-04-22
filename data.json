@@ -3,39 +3,58 @@
     {
       "id": 1,
       "title": "Avengers: Endgame",
-      "price": 12.5,
-      "bookedSeats": [
-        "A5"
-      ]
+      "price": 120,
+      "bookedSeats": ["A5"],
+      "status": "Now Showing"
     },
     {
       "id": 2,
       "title": "Inception",
-      "price": 10,
-      "bookedSeats": [
-        "A4",
-        "A5",
-        "A6",
-        "A7"
-      ]
+      "price": 100,
+      "bookedSeats": ["A4", "A5", "A6", "A7"],
+      "status": "Now Showing"
     },
     {
       "id": 3,
       "title": "Interstellar",
-      "price": 11,
-      "bookedSeats": []
+      "price": 110,
+      "bookedSeats": [],
+      "status": "Now Showing"
     },
     {
       "id": 4,
       "title": "The Matrix",
-      "price": 9.5,
-      "bookedSeats": []
+      "price": 95,
+      "bookedSeats": [],
+      "status": "Now Showing"
     },
     {
       "id": 5,
       "title": "Parasite",
-      "price": 10.5,
-      "bookedSeats": []
+      "price": 105,
+      "bookedSeats": [],
+      "status": "Now Showing"
+    },
+    {
+      "id": 6,
+      "title": "Oppenheimer",
+      "price": 150,
+      "bookedSeats": [],
+      "status": "Coming Soon"
+    },
+    {
+      "id": 7,
+      "title": "Dune: Part Two",
+      "price": 140,
+      "bookedSeats": [],
+      "status": "Coming Soon"
+    },
+    {
+      "id": 8,
+      "title": "Joker: Folie à Deux",
+      "price": 130,
+      "bookedSeats": [],
+      "status": "Coming Soon"
     }
   ],
   "bookings": [
@@ -44,61 +63,10 @@
       "customerName": "J Jeevan",
       "customerPhone": "2345678",
       "showName": "Annamalai",
-      "seats": [
-        "H3",
-        "H4"
-      ],
+      "seats": ["H3", "H4"],
       "totalAmount": 300,
       "showDate": "26/03/2026",
       "timestamp": "25/3/2026, 1:53:12 pm"
-    },
-    {
-      "bookingId": "2899S4",
-      "customerName": "J Jeevan",
-      "customerPhone": "2345678",
-      "showName": "Movie",
-      "seats": [
-        "J4",
-        "K6"
-      ],
-      "totalAmount": 400,
-      "showDate": "27/03/2026",
-      "timestamp": "25/3/2026, 1:47:39 pm"
-    },
-    {
-      "bookingId": "AZOT3F",
-      "customerName": "J Jeevan",
-      "customerPhone": "2345678",
-      "showName": "Movie",
-      "seats": [
-        "E11"
-      ],
-      "totalAmount": 400,
-      "showDate": "27/03/2026",
-      "timestamp": "25/3/2026, 1:40:00 pm"
-    },
-    {
-      "bookingId": "V2DEKF",
-      "customerName": "Jeevaan",
-      "showName": "Avengers: Endgame",
-      "seats": [
-        "A5"
-      ],
-      "totalAmount": 12.5,
-      "timestamp": "9/3/2026, 10:21:16 pm"
-    },
-    {
-      "bookingId": "ULQC3X",
-      "customerName": "Tharun",
-      "showName": "Inception",
-      "seats": [
-        "A4",
-        "A5",
-        "A6",
-        "A7"
-      ],
-      "totalAmount": 40,
-      "timestamp": "9/3/2026, 10:22:37 pm"
     }
   ]
 }

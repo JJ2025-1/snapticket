@@ -303,7 +303,7 @@ export default function Page() {
         <div className={`${styles.contentArea} animate-fade-in`}>
           <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px'}}>
             <h1 style={{fontSize: '28px', fontWeight: 800}}>My Bookings</h1>
-            <button className="btn-snaptickets" onClick={() => setActiveTab('Now Showing')}>
+            <button className="btn-snaptickets" onClick={() => setActiveTab('Showtimes')}>
               🏠 Back to Home
             </button>
           </div>
@@ -315,7 +315,7 @@ export default function Page() {
   <div style={{fontSize: '50px', marginBottom: '20px'}}>🎟️</div>
   <h3 style={{color: '#fff'}}>No Bookings Found</h3>
   <p style={{color: 'var(--text-muted)', marginTop: '10px'}}>You haven't booked any movies yet. Start exploring!</p>
-  <button className="btn-snaptickets" style={{marginTop: '30px'}} onClick={() => setActiveTab('Now Showing')}>Explore Movies</button>
+  <button className="btn-snaptickets" style={{marginTop: '30px'}} onClick={() => setActiveTab('Showtimes')}>Explore Movies</button>
 </div>
           ) : (
             <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '20px'}}>

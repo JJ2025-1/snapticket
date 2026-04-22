@@ -29,6 +29,7 @@
 ### <font color="#ffc400">🎬 Real-time Movie Discovery</font>
 *   **Live Sync:** Movie data fetched directly from Supabase.
 *   **Dynamic Posters:** High-resolution assets pulled via TMDB API.
+*   **Coming Soon:** Dedicated tab for upcoming blockbuster previews.
 
 ### <font color="#ffc400">💺 Advanced Seat Engine</font>
 *   **Interactive Mapping:** Visual grid with multi-tier pricing (**Prime** & **Classic**).
